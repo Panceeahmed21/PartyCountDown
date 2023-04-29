@@ -4,6 +4,10 @@
     height: 100vh;
 
 }
+.cursor-pointer{
+    cursor: pointer;
+ 
+}
 
 .closeIcon {
     color: white;
@@ -181,4 +185,14 @@ h1 {
     background-color: #D62E33;
     color: white;
 
+}
+
+.accordion-button:not(.collapsed) {
+ background-color: rgba(214, 46, 51, 0.6);
+color: white;
+box-shadow: 0;
+}
+.accordion-button{
+    background-color: rgba(214, 46, 51, 0.6);
+    color: white;
 }

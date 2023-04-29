@@ -2,11 +2,14 @@ $(window).scroll(function(){
     var bodyScroll = $(window).scrollTop();
     var nextSec=$("#details").offset().top
     console.log(bodyScroll,nextSec);
-    if(bodyScroll>=nextSec-252){
+    if(bodyScroll>=nextSec-290){
         $(".box-right span ").css("color","black")
         $(".box-right span ").css(" font-weight",800)
     }
  else{
+  $(".box-left").animate({ left: -x }, 1000);
+  $(".box-right").animate({ left: -x }, 1000);
+  $(".box-right span").animate({color:"white"},{'background-color':'black'})
     $(".box-right span ").css("color","white")
  }
 })
